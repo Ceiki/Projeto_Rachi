@@ -4,41 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel='stylesheet' type='text/css' media='screen' href='./styles/style.css'>
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <title>Rachi</title>
 </head>
 <body>
-     <header class="header container-grid"> 
-         <img src="assets//Images/Group 33553.png" alt="Logo"> 
-        <nav class="navbar">
+    <nav id="nav">
+        <div class="container">
+            <a href="home"><img src="assets//Images/Group 33553.png" alt="Logo"></a>
+            <button id="btnMobile">
+                <i class="bi bi-list-nested"></i>
+            </button>
+            <nav class="mobile2 open">
                 <ul>
-                    <li><a href="#func">Funcionalidades</a></li>
-                    <li><a href="#app">App</a></li>
-                    <li><a href="#plano">Planos</a></li>
-                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="func"><b>Funcionalidades</b></a></li>
+                    <li><a href="app"><b>App</b></a></li>
+                    <li><a href="plano"><b>Planos</b></a></li>
+                    <li><a href="contato"><b>Contato</b></a></li>
                 </ul>
-        </nav> 
-       
-    </header>
-
-    <main>
-
-        <section class="teste">
-            <section class="bannerConteudo container-grid">
-                 <div class="div_texto">
-                 <h1>Rachi, <br> 
-                        é tudo que você <br> 
-                        precisa em um só lugar.
-                    </h1>
-
-                    <button>Cadastrar-se</button>
-                </div> 
-
-                <img src="./assets/Images/Working from anywhere-rafiki .png" alt="worker">
-            </section>
-        </section>
+            </nav>
+        </div>
+    </nav>  
     
-    <section id="func">
+    <header class="header" id="home">
+        <div class="container1">
+            <div class="div_texto1">
+                <h1>Rachi, <br> 
+                    é tudo que você <br> 
+                    precisa em um só lugar.
+                </h1>
+                <a href="#"><div class="btn_azul"><p>Cadastrar-se</p></div></a>
+            </div>
+
+            <div class="div_img">
+                <img class="img1" src="./assets/Images/Working from anywhere-rafiki .png" alt="worker">
+            </div>
+        </div>
+    </header>
+    <section class="cads" id="func">
         <h2>Como funciona</h2>
 
         <div class="card_container">
@@ -62,79 +64,78 @@
         </div>
     </section>
 
-    <section class="teste">
-        <section class="app container-grid" id="app">
-            <div class="div_texto2">
-                <h2>Baixe nosso app para desfrutar mais!</h2>
+    <section class="app" id="app">
+        <div class="container2">
+            <div class="div_texto">
+                <h2>Baixe nosso app <br> para desfrutar mais!</h2>
                  <p>Amet in elementum nulla scelerisque dui, egestas at. Elit consectetur 
-                    turpis elementum amet vitae et etiam nec. Varius volutpat hac adipiscing 
-                    tincidunt pretium.</p>
-
-                    <div class="container_botoes">
-                        <img src="./assets/Images/googlePlay.png" alt="">
-                        <img src="./assets/Images/appstore.png" alt=""> 
-                    </div>
+                    turpis elementum amet vitae et etiam nec.</p>
             </div>
-                <div class="div-img">
-                    <img src="./assets/Images/New notifications.png" alt="">
+            <div class="div_img">
+                    <img class="img2"  src="./assets/Images/New notifications.png" alt="">
+            </div>
+
+            <div class="container_botoes">
+                    <a href="#"><div class="btn_cinza">
+                        <img src="./assets/Images/googlePlay.png" alt="">
+                    </div></a>
+
+                    <a href="#"><div class="btn_cinza">
+                        <img src="./assets/Images/appstore.png" alt="">                      
+                    </div></a> 
+            </div>        
+        </div>
+    <section></section>
+
+    <section class="plano" id="plano">
+            <div class="container_titulo">
+                <h2>Nossos Planos</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores, numquam.</p>
+            </div>
+            <div class="container_card1">
+                <div class="preço">
+                    <h2>Bronze</h2>
+                    <img src="./assets/Images/Preço.png" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, magni!</p>
+                    <input class="btn_assinar" type="button" value="Assinar">
                 </div>
-                                            
-        </section>
-    </section>
+            </div>
 
-        <section class="colorCard">
-            <section class="cardContent">
-                <div class="cardTitle">
-                    <h2>Nossos Planos</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci numquam distinctio assumenda eveniet! Minus, soluta.</p>
-                </div>
-
-                <section class="container_card">
-
-                <div class="card-Body">
-                <h3>Bronze</h3>
-                <img src="./assets/Images/Preço.png" alt="">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, magni!</p>
-                <button>Assinar</button>
-                </div>
-
-                    <div class="card-BodyPrata">
-                    <h3>Prata</h3>
-                    <button>PREFERIDO</button>
+            <div class="container_card2">
+                <div class="preço">
+                    <h2>Prata</h2>
+                    <input class="btn_pref" type="button" value="Preferido">
                     <img src="./assets/Images/Preço (1).png" alt="">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, magni!</p>
-                    <button>Assinar</button>
-                    </div>               
-
-                        <div class="card-Body">
-                        <h3>Ouro</h3>
-                        <img src=".//assets/Images/Preço (2).png" alt="">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, magni!</p>
-                        <button>Assinar</button>
-                        </div>
-            </section>
-        </section>
-    </section>
-    </main>
-        <footer>
-            <section class="card-contato">
-                <section class="content3 container-grid">
-                    <div class="div_1">
-                    <h1>Contato</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Laudantium placeat ipsum iure asperiores odio. Aut?</p>
-                </div>
-
-                <div class="input-style">
-                    <input type="text" placeholder="Seu melhor e-mail">
-                    <button>Enviar</button>
-                </div>  
-                </section>
-            </section>
-
-        </main>
-        <footer>
-            &#169 Rachi - Todos os direitos reservados
+                    <input class="btn_assinar1" type="button" value="Assinar">
+                </div>               
             </div>
-        </footer>
-  </body>
+            <div class="container_card3">
+                <div class="preço">
+                    <h2>Ouro</h2>
+                    <img src=".//assets/Images/Preço (2).png" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, magni!</p>
+                    <input class="btn_assinar" type="button" value="Assinar">
+                </div> 
+            </div>
+    </section>
+
+    <section class="contato" id="contato">
+        <div class="fundo">
+            <h2>Contato</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore ipsam inventore totam magnam error corrupti obcaecati ea cupiditate aliquam ducimus?</p>
+        </div>
+
+        <div class="input_contato">
+            <input type="email" name="email" placeholder="Seu melhor email" required>
+            <hr>
+            <input class="envia" type="submit" name="envia" value="Enviar">
+        </div>
+    </section>
+
+    <footer>
+        <p>Todos os dedireitos reservados </p>
+    </footer>
+    <script src="./scripts/script.js"></script>
+</body>
 </html>
