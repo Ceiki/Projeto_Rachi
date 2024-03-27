@@ -8,40 +8,38 @@
     <title>Rachi</title>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="logo">
-            <a href="#home"><img src="assets//Images/Group 33553.png" alt="Logo"></a>
-            </div>
-        
-          <div class="menu">
-            <ul>
-                <li><a href="#func">Funcionalidades</a></li>
-                <li><a href="#app">App</a></li>
-                <li><a href="#plano">Planos</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </div>
-    </nav> 
-    
-     <header class="header"> 
-        <div class="headline">
-             <div class="div_texto">
-             <h1>Rachi, <br> 
-                    é tudo que você <br> 
-                    precisa em um só lugar.
-                </h1>
-               </div> 
-
-            <a href="#" div class="btn_azul"><span>Cadastrar-se</span></a>
-            </div>
-            
-            <div class="img-headline">
-                <img src="./assets/Images/Working from anywhere-rafiki .png" alt="worker">
-            </div>
-        </div>
+     <header class="header container-grid"> 
+         <img src="assets//Images/Group 33553.png" alt="Logo"> 
+        <nav class="navbar">
+                <ul>
+                    <li><a href="#func">Funcionalidades</a></li>
+                    <li><a href="#app">App</a></li>
+                    <li><a href="#plano">Planos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+        </nav> 
+       
     </header>
 
+    <main>
 
+        <section class="teste">
+            <section class="bannerConteudo container-grid">
+                 <div class="div_texto">
+                 <h1>Rachi, <br> 
+                        é tudo que você <br> 
+                        precisa em um só lugar.
+                    </h1>
+
+                    <button>Cadastrar-se</button>
+                </div> 
+    
+                <!-- <a href="#" div class="btn_azul"><span>Cadastrar-se</span></a> -->
+
+                <img src="./assets/Images/Working from anywhere-rafiki .png" alt="worker">
+            </section>
+        </section>
+    
     <section id="func">
         <h2>Como funciona</h2>
 
@@ -66,79 +64,74 @@
         </div>
     </section>
 
-    <section class="app" id="app">
-        <div class="container">
-            <div class="div_texto">
+    <section class="teste">
+        <section class="app container-grid" id="app">
+            <div class="div_texto2">
                 <h2>Baixe nosso app para desfrutar mais!</h2>
                  <p>Amet in elementum nulla scelerisque dui, egestas at. Elit consectetur 
                     turpis elementum amet vitae et etiam nec. Varius volutpat hac adipiscing 
                     tincidunt pretium.</p>
 
-                <div class="container_botoes">
-                    <a href="#"><div class="btn_cinza">
+                    <div class="container_botoes">
                         <img src="./assets/Images/googlePlay.png" alt="">
-                    </div></a>
-
-                    <a href="#"><div class="btn_cinza">
-                        <img src="./assets/Images/appstore.png" alt="">                      
-                    </div></a>
+                        <img src="./assets/Images/appstore.png" alt=""> 
+                    </div>
+            </div>
+                <div class="div-img">
+                    <img src="./assets/Images/New notifications.png" alt="">
                 </div>
-            </div>
-
-            <div class="div_img">
-                <img src="./assets/Images/New notifications.png" alt="">
-            </div>
-        </div>
+                                            
+        </section>
     </section>
 
-        <section id="plano">
-            <h2>Nossos Planos</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores, numquam.</p>
+        <section class="colorCard">
+            <section class="cardContent">
+                <div class="cardTitle">
+                    <h2>Nossos Planos</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores, numquam.</p>
+                </div>
 
-            <div class="container_card">
-                <div class="preço">
+                <section class="container_card">
+
+                <div class="card-Body">
                 <h3>Bronze</h3>
                 <img src="./assets/Images/Preço.png" alt="">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, magni!</p>
-                <input type="button" value="Assinar">
+                <button>Assinar</button>
                 </div>
-            </div>
 
-            <div class="container_card">
-                    <div class="preço">
+                    <div class="card-BodyPrata">
                     <h3>Prata</h3>
-                    <input type="button" value="Preferido">
+                    <button>PREFERIDO</button>
                     <img src="./assets/Images/Preço (1).png" alt="">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, magni!</p>
-                    <input type="button" value="Assinar">
+                    <button>Assinar</button>
                     </div>               
-             </div>
-             <div class="container_card">
-                    <div class="preço">
-                    <h3>Ouro</h3>
-                    <img src=".//assets/Images/Preço (2).png" alt="">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, magni!</p>
-                    <input type="button" value="Assinar">
-                    </div> 
-                 </div>
+
+                        <div class="card-Body">
+                        <h3>Ouro</h3>
+                        <img src=".//assets/Images/Preço (2).png" alt="">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, magni!</p>
+                        <button>Assinar</button>
+                        </div>
+            </section>
         </section>
-
-        <section id="contato">
-            <div class="fundo">
-
-                <h2>Contato</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore ipsam inventore totam magnam error corrupti obcaecati ea cupiditate aliquam ducimus?</p>
-            </div>
-
-            <div class="input_contato">
-                <input type="email" name="email" placeholder="Seu melhor email" required>
-                <input type="submit" name="envia" value="Enviar">
-            </div>
-        </div>
-        </section>
-
+    </section>
+    </main>
         <footer>
-            <p>Todos os dedireitos reservados </p>
+            <section class="card-contato">
+                <section class="content3 container-grid">
+                    <h1>Contato</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Laudantium placeat ipsum iure asperiores odio. Aut?</p>
+                <div class="input-style">
+                    <input type="text" placeholder="Seu melhor e-mail">
+                    <button>Enviar</button>
+                </div>    
+                </section>
+            </section>
+            <div class="card-direitos container-grid">
+            &#169 Rachi - Todos os dedireitos reservados
+            </div>
         </footer>
   </body>
 </html>
